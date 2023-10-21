@@ -13,7 +13,7 @@ export function First() {
         <div>
           <Reveal>
             <h1 className="text-5xl font-semibold">
-              Hi! I'm
+              Hi! I am
               <span className="block degradedBlue bg-blueLight">
                 Gerardo Sanchez
               </span>
@@ -22,7 +22,7 @@ export function First() {
           <Reveal>
             <p className="max-w-md mt-10">
               I am a software developer with a passion for creating and learning
-              new things. Additionally, I'm a student at Tecnológico de
+              new things. Additionally, I am a student at Tecnológico de
               Monterrey.
             </p>
           </Reveal>

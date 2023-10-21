@@ -21,7 +21,7 @@ export function Principal() {
           </Reveal>
           <Reveal>
             <p className="max-w-md mt-10">
-              Hi, I'm Gerardo Sanchez, a software developer with a passion for
+              Hi, I am Gerardo Sanchez, a software developer with a passion for
               creating and learning backend and frontend. I specialize in
               building robust and efficient web applications that deliver a
               seamless user experience. With a foundation in both backend and
