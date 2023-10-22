@@ -22,7 +22,7 @@ export function First() {
           <Reveal>
             <p className="max-w-md mt-10">
               I am a software developer with a passion for creating and learning
-              new things. Additionally, I am a student at Tecnológico de
+              new things. Additionally, I am a student at Tecnologico de
               Monterrey.
             </p>
           </Reveal>
