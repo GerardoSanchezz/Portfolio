@@ -37,7 +37,7 @@ export function Header() {
                 className="px-4 transition-all duration-500 ease-in-out"
               >
                 <Link
-                  href={`${idLink}`}
+                  href={`/${idLink}`}
                   passHref={true}
                   className="text-lg hover:text-secondary"
                 >
