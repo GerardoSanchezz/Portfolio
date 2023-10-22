@@ -36,7 +36,11 @@ export function Header() {
                 key={id}
                 className="px-4 transition-all duration-500 ease-in-out"
               >
-                <Link href={idLink} className="text-lg hover:text-secondary">
+                <Link
+                  href={`${idLink}`}
+                  passHref
+                  className="text-lg hover:text-secondary"
+                >
                   {name}
                 </Link>
               </div>
