@@ -38,7 +38,7 @@ export function Header() {
               >
                 <Link
                   href={`${idLink}`}
-                  passHref
+                  passHref={true}
                   className="text-lg hover:text-secondary"
                 >
                   {name}
