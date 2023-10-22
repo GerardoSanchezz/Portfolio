@@ -7,9 +7,11 @@ import { MotionTransition } from "../MotionTransition";
 import { Reveal } from "../Reveal";
 import { EffectCards } from "swiper/modules";
 import { dataCards } from "./Projects.data";
+import { useState } from "react";
 import Image from "next/image";
 
 export function Projects() {
+  const [selectedImage, setSelectedImage] = useState<string>(dataCards[0].text);
   return (
     <div className="relative px-6 py-20 md:py-64" id="projects">
       <BackgroundRadialRight />
@@ -22,7 +24,15 @@ export function Projects() {
         </Reveal>
         <div className="px-5">
           <MotionTransition>
-            <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]}>
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              onSlideChange={(swiper) => {
+                const currentSlide = swiper.activeIndex;
+                setSelectedImage(dataCards[currentSlide].text);
+              }}
+            >
               {dataCards.map(({ image, id, link }) => (
                 <SwiperSlide key={id}>
                   <a href={link} target="_blank">
@@ -31,6 +41,9 @@ export function Projects() {
                 </SwiperSlide>
               ))}
             </Swiper>
+            {selectedImage && (
+              <div className="image-caption mt-6">{selectedImage}</div>
+            )}
           </MotionTransition>
         </div>
       </div>
